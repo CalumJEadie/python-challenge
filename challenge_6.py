@@ -61,13 +61,19 @@ def collect_comments(start_id):
 
     zip_file = zipfile.ZipFile(open("channel.zip"))
 
+    comments = []
     curr_id = start_id
     while True:
-        print get_comment(zip_file,curr_id)
+        comments.append(get_comment(zip_file,curr_id))
         try:
             curr_id = get_next_id(curr_id)
         except Exception:
             break
+    return comments
+    
+def print_comments(comments):
+
+    print ''.join(comments)
 
 if __name__ == '__main__':
 
@@ -94,4 +100,7 @@ if __name__ == '__main__':
     # Approach 3: Aha, a zip file can contain a comment!
     
     start_id = 90052
-    collect_comments(start_id)
+    comments = collect_comments(start_id)
+    print_comments(comments)
+    
+    # hockey
