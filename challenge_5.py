@@ -4,9 +4,8 @@
 # peakhell sounds like? pickle
 
 import pickle
-import texts
 
-banner = pickle.loads(texts.challenge_5)
+banner = pickle.loads(open('data/5/banner.p').read())
 print banner
 
 # some kind of ascii art using run length encoding?
@@ -17,4 +16,4 @@ for line in banner:
         line_str += char*length
     print line_str
     
-# channel
+# Next url: http://www.pythonchallenge.com/pc/def/channel.html

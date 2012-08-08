@@ -53,3 +53,5 @@ if __name__ == '__main__':
     s = "map"
     s = shift(s,2)
     print s
+    
+# Next url: http://www.pythonchallenge.com/pc/def/ocr.html

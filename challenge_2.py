@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import texts
+import utils
 
 def count_characters(s):
     
@@ -19,7 +19,7 @@ if __name__ == '__main__':
         
     # Look for least common characters.
 
-    counts = count_characters(texts.challenge_2)
+    counts = count_characters(utils.get_text(2))
     print counts
     counts_sorted = sorted(counts, key=counts.get)
     print counts_sorted
@@ -34,3 +34,5 @@ if __name__ == '__main__':
     print s.lower()
     
     # aeilquty -> equality
+
+# Next url: http://www.pythonchallenge.com/pc/def/equality.html

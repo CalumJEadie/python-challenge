@@ -9,7 +9,7 @@ import zipfile
 
 # will admit needed a bit of help to go from zip to downloading channel.zip!!
 
-list_dir="./channel"
+list_dir="data/6/channel"
 
 def get_node_path(node_id):
 
@@ -59,7 +59,7 @@ def get_comment(zip_file,node_id):
     
 def collect_comments(start_id):
 
-    zip_file = zipfile.ZipFile(open("channel.zip"))
+    zip_file = zipfile.ZipFile(open("data/6/channel.zip"))
 
     comments = []
     curr_id = start_id
